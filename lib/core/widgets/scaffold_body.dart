@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'custom_column.dart';
+import 'package:login_screen/core/widgets/layouts/desktop/desktop_layout.dart';
+import 'package:login_screen/core/widgets/layouts/mobile/mobile_layout.dart';
+import 'package:login_screen/core/widgets/layouts/tablet/tablet_layout.dart';
 
 class ScaffoldBody extends StatelessWidget {
   const ScaffoldBody({
@@ -8,18 +10,23 @@ class ScaffoldBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Container(
-        height: MediaQuery.of(context).size.height,
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/images/curve.jpg'),
-            fit: BoxFit.fill,
-          ),
-        ),
-        child: const CustomColumn(),
-      ),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth < 480) {
+          return const SingleChildScrollView(
+            child: MobileLayout(),
+          );
+        }
+        if (constraints.maxWidth > 480 && constraints.maxWidth < 800) {
+          return const SingleChildScrollView(
+            child: TabletWidget(),
+          );
+        } else {
+          return const SingleChildScrollView(
+            child: DeskTopLayout(),
+          );
+        }
+      },
     );
   }
 }
-

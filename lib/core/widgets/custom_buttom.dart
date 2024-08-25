@@ -13,7 +13,7 @@ class CustomLoginText extends StatelessWidget {
       child: FadeInUp(
         duration: const Duration(milliseconds: 1600),
         child: Container(
-          margin: const EdgeInsets.only(top: 50),
+          margin: const EdgeInsets.only(top: 40),
           child: Center(
             child: Text(
               "Login",

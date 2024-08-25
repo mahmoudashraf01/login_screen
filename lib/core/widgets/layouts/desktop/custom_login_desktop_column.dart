@@ -1,12 +1,12 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:login_screen/core/utils/colors.dart';
-import 'custom_login_buttom.dart';
-import 'cutom_forget_passord_txt.dart';
-import 'cutom_text_field_column.dart';
+import 'package:login_screen/core/widgets/custom_login_buttom.dart';
+import 'package:login_screen/core/widgets/cutom_forget_passord_txt.dart';
+import 'package:login_screen/core/widgets/cutom_text_field_column.dart';
 
-class CustomLoginColumn extends StatelessWidget {
-  const CustomLoginColumn({
+class CustomLoginDeskTopColumn extends StatelessWidget {
+  const CustomLoginDeskTopColumn({
     super.key,
   });
 
@@ -19,6 +19,7 @@ class CustomLoginColumn extends StatelessWidget {
           FadeInUp(
             duration: const Duration(milliseconds: 1800),
             child: Container(
+              width: MediaQuery.of(context).size.width * 0.4,
               padding: const EdgeInsets.all(5),
               decoration: BoxDecoration(
                 color: white2,
@@ -37,7 +38,7 @@ class CustomLoginColumn extends StatelessWidget {
           const SizedBox(
             height: 30,
           ),
-          const CustomLoginButtom(),
+          const CustomLoginDeskTopButtom(),
           const SizedBox(
             height: 70,
           ),

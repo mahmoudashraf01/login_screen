@@ -1,5 +1,6 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:login_screen/core/utils/colors.dart';
 
 class CustomForgetPasswordTxt extends StatelessWidget {
   const CustomForgetPasswordTxt({
@@ -10,10 +11,10 @@ class CustomForgetPasswordTxt extends StatelessWidget {
   Widget build(BuildContext context) {
     return FadeInUp(
       duration: const Duration(milliseconds: 2000),
-      child: const Text(
+      child: Text(
         "Forgot Password?",
         style: TextStyle(
-          color: Color.fromRGBO(190, 193, 255, 1),
+          color: deepBlue,
         ),
       ),
     );
