@@ -4,13 +4,12 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+<div>
+  <h3>Login Page With FadeInUp Animation.</h3>
+</div>
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<div>
+  <h3>Login Page Screen Shot</h3>
+  <img src="https://github.com/user-attachments/assets/a297c11b-583c-4cdc-b9e3-db7db72b8b16" alt="Login View">
+</div>
+<br><br>
